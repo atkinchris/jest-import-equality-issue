@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "node -e \"console.log(require('./src/example')())\"",
+    "test-passing": "jest --config=withoutReset.config.js",
+    "test-failing": "jest --config=withReset.config.js"
+  },
+  "dependencies": {
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "resetModules": true
+  }
+}
